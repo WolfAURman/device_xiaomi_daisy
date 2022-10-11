@@ -47,11 +47,6 @@ on init
     write /sys/block/zram0/disksize 1073741824
     write /sys/block/zram0/max_comp_streams 8
     write /proc/sys/vm/page-cluster 0
-    write /proc/sys/vm/swappiness 85
-
-    # VM settings
-    write /proc/sys/vm/dirty_expire_centisecs 3000
-    write /proc/sys/vm/dirty_ratio 40
 
 on post-fs
     chmod 0755 /sys/kernel/debug/tracing
@@ -155,6 +150,9 @@ on boot
 #   Increased technology maximums should be reflected here.
     write /proc/sys/net/core/rmem_max  8388608
     write /proc/sys/net/core/wmem_max  8388608
+
+    # default country code
+    setprop ro.boot.wificountrycode 00
 
     # To prevent out of order acknowledgements from making
     # connection tracking to treat them as not belonging to
@@ -412,6 +410,10 @@ on property:vold.decrypt=trigger_restart_framework
 
 on property:persist.env.fastdorm.enabled=true
     setprop persist.radio.data_no_toggle 1
+
+    # Smart charging
+    chown system system /sys/class/power_supply/battery/input_suspend
+    chmod 0666 /sys/class/power_supply/battery/input_suspend
 
 on property:ro.vendor.iocgrp.config=1
     mkdir /dev/blkio
