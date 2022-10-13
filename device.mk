@@ -146,11 +146,11 @@ PRODUCT_PACKAGES += \
 
 # Audio configuration
 PRODUCT_PACKAGES += \
-    libhdmiedid \
-    libhfp \
-    libsndmonitor \
-    libspkrprot \
-    libssrec
+    #libhdmiedid \
+    #libhfp \
+    #libsndmonitor \
+    #libspkrprot \
+    #libssrec
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy.conf \
@@ -175,11 +175,11 @@ PRODUCT_COPY_FILES += \
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0.vendor \
-    android.hardware.bluetooth.a2dp@1.0-impl \
-    android.hardware.bluetooth.a2dp@1.0-service \
-    libldacBT_dec \
+    #android.hardware.bluetooth.a2dp@1.0-impl \
+    #android.hardware.bluetooth.a2dp@1.0-service \
+    #libldacBT_dec \
     libbt-vendor \
-    libbthost_if \
+    #libbthost_if \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
     vendor.qti.hardware.btconfigstore@2.0.vendor
 
@@ -209,7 +209,7 @@ PRODUCT_COPY_FILES += \
 
 # Configstore
 PRODUCT_PACKAGES += \
-    android.hardware.configstore@1.0-service
+    #android.hardware.configstore@1.0-service
 
 # ConsumerIr
 PRODUCT_PACKAGES += \
@@ -229,17 +229,17 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@2.0-impl-2.1 \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
-    copybit.msm8953 \
+    #copybit.msm8953 \
     gralloc.msm8953 \
     hwcomposer.msm8953 \
     memtrack.msm8953 \
-    libdisplayconfig.qti \
-    libdisplayconfig.qti.vendor \
+    #libdisplayconfig.qti \
+    #libdisplayconfig.qti.vendor \
     libqdMetaData \
     libqdMetaData.system \
-    libgenlock \
+    #libgenlock \
     libnl \
-    libwfdaac \
+    #libwfdaac \
     vendor.display.config@1.0.vendor \
     vendor.display.config@2.0 \
     vendor.display.config@2.0.vendor
@@ -343,7 +343,7 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
-    android.hardware.media.omx@1.0-impl \
+    #android.hardware.media.omx@1.0-impl \
     android.hardware.media.omx@1.0-service
 
 PRODUCT_PACKAGES += \
@@ -379,7 +379,7 @@ PRODUCT_PACKAGES += \
 
 # OMX
 PRODUCT_PACKAGES += \
-    android.hardware.media.omx@1.0-impl \
+    #android.hardware.media.omx@1.0-impl \
     android.hardware.media.omx@1.0-service \
     libc2dcolorconvert \
     libmm-omxcore \
@@ -389,7 +389,7 @@ PRODUCT_PACKAGES += \
     libOmxEvrcEnc \
     libOmxG711Enc \
     libOmxQcelp13Enc \
-    libOmxSwVencHevc \
+    #libOmxSwVencHevc \
     libOmxVdec \
     libOmxVenc \
     libstagefright_enc_common \
@@ -410,7 +410,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service
+    #android.hardware.power-service
 
 # Perf
 PRODUCT_PACKAGES += \
@@ -478,7 +478,7 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.deprecated@1.0.vendor \
     android.hardware.secure_element@1.2.vendor \
     librmnetctl \
-    libcnefeatureconfig \
+    #libcnefeatureconfig \
     libxml2 \
     qti-telephony-hidl-wrapper \
     qti_telephony_hidl_wrapper.xml \
@@ -567,11 +567,11 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service-lazy \
     libcld80211 \
     libqmiservices_shim \
-    libqsap_sdk \
-    libQWiFiSoftApCfg \
+    #libqsap_sdk \
+    #libQWiFiSoftApCfg \
     libwpa_client \
     hostapd \
-    dhcpcd.conf \
+    #dhcpcd.conf \
     wificond \
     wpa_supplicant \
     wpa_supplicant.conf
