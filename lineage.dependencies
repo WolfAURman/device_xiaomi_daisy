@@ -1,19 +1,19 @@
 [
   {
-    "repository" : "Xtended-Devices/kernel_xiaomi_daisy",
+    "repository" : "https://github.com/WolfAURman/android_kernel_xiaomi_daisy",
     "target_path": "kernel/xiaomi/daisy",
-    "branch"     : "xt",
+    "branch"     : "12.1",
     "clone-depth": "1"
   },
   {
-    "repository" : "Xtended-Devices/vendor_xiaomi_daisy",
+    "repository" : "https://github.com/Xtended-Devices/vendor_xiaomi_daisy",
     "target_path": "vendor/xiaomi",
     "branch"     : "xr",
     "clone-depth": "1"
   },
   {
-    "repository" : "https://gitlab.com/PixelOS-Devices/playgroundtc",
-    "target_path": "prebuilts/clang/host/linux-x86/clang-playgroundtc",
+    "repository" : "https://github.com/kdrag0n/proton-clang",
+    "target_path": "prebuilts/clang/host/linux-x86/clang-proton",
     "branch"     : "15",
     "clone-depth": "1"
     
